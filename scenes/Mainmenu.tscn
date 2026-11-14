@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://wyp0fl8oanam"]
+
+[ext_resource type="Script" uid="uid://ik4vn7ygsnme" path="res://scripts/mainmenu.gd" id="1_gmv32"]
+
+[node name="MainMenu" type="Control" unique_id=174271052]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_gmv32")
+
+[node name="QuitButton" type="Button" parent="." unique_id=1702760663]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 386.0
+offset_right = 700.0
+offset_bottom = 446.0
+text = "QUIT"
+
+[node name="PlayButton" type="Button" parent="." unique_id=366119069]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 287.0
+offset_right = 700.0
+offset_bottom = 347.0
+text = "PLAY"
+
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

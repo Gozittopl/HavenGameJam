@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c3u5huwtef4d6" path="res://scenes/Coffee.tscn" id="3_nb5j2"]
 [ext_resource type="PackedScene" uid="uid://cdu67666ixq0m" path="res://scenes/platform.tscn" id="4_r7wj8"]
 [ext_resource type="PackedScene" uid="uid://80dv7rfutiix" path="res://scenes/finish.tscn" id="5_3n54i"]
+[ext_resource type="PackedScene" uid="uid://1rqsngruh4y2" path="res://scenes/wall.tscn" id="6_nb5j2"]
 
 [node name="Main" type="Node2D" unique_id=1460091751]
 
@@ -12,7 +13,7 @@
 position = Vector2(-784, 550)
 
 [node name="Ground" parent="." unique_id=2120301584 instance=ExtResource("2_3n54i")]
-position = Vector2(-38, 936)
+position = Vector2(-487, 912)
 
 [node name="Coffee" parent="." unique_id=575645644 instance=ExtResource("3_nb5j2")]
 position = Vector2(-507, 428)
@@ -45,3 +46,13 @@ position = Vector2(-493, -820)
 position = Vector2(-452, -1332)
 
 [node name="Finish" parent="." unique_id=1119427143 instance=ExtResource("5_3n54i")]
+position = Vector2(-449, -1450)
+next_level_path = "uid://cvga1viiy511n"
+
+[node name="Wall" parent="." unique_id=2139381859 instance=ExtResource("6_nb5j2")]
+position = Vector2(-1663, -1316)
+scale = Vector2(1, 20)
+
+[node name="Wall2" parent="." unique_id=1224492321 instance=ExtResource("6_nb5j2")]
+position = Vector2(693, -1348)
+scale = Vector2(1, 20)
