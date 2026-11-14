@@ -5,7 +5,7 @@ extends CharacterBody2D
 var gravity = 1800.0
 
 # MOVEMENT
-var speed = 350.0
+var speed = 500.0
 var acceleration = 1800.0
 var friction = 2200.0
 
@@ -36,6 +36,7 @@ var wall_bounce_strength = 1.0
 func _physics_process(delta):
 	if jump_buffer_after_landing > 0:
 		jump_buffer_after_landing -= delta
+
 	# REMEMBER FLOOR STATE
 	var was_on_floor = is_on_floor()
 	var jump_pressed = Input.is_action_just_pressed("ui_accept")
@@ -60,7 +61,7 @@ func _physics_process(delta):
 			friction * delta
 		)
 
-	# MANUAL JUMP FROM FLOOR OR DURING AUTOMATIC BOUNCE
+	# MANUAL JUMP
 	if jump_pressed and (
 		was_on_floor
 		or jump_buffer_after_landing > 0
@@ -86,13 +87,10 @@ func _physics_process(delta):
 		manual_jump_active = false
 
 		if bounce_enabled:
-
-			# MANUAL JUMP TAKES PRIORITY ON LANDING
 			if jump_pressed:
 				velocity.y = jump_force
 				manual_jump_active = true
 				bounce_pending = false
-
 			else:
 				var fall_speed = max(impact_velocity.y, 0.0)
 
@@ -109,28 +107,24 @@ func _physics_process(delta):
 					)
 					bounce_pending = true
 					bounce_jump_allowed = true
-
 				else:
 					velocity.y = 0.0
 					bounce_pending = false
 
 	# OTHER COLLISIONS
 	for i in range(get_slide_collision_count()):
-
 		var collision = get_slide_collision(i)
 		var normal = collision.get_normal()
 
 		# CEILING BOUNCE
 		if normal.y > 0.7 and impact_velocity.y < 0:
-
-			if bounce_enabled and bounce_pending:
+			if bounce_enabled:
 				velocity.y = abs(impact_velocity.y)
 				bounce_pending = false
 				manual_jump_active = false
 
 		# WALL BOUNCE
 		if abs(normal.x) > 0.7:
-
 			if impact_velocity.dot(normal) < 0:
 				velocity.x = (
 					abs(impact_velocity.x)
@@ -141,7 +135,6 @@ func _physics_process(delta):
 
 # COLLECTING COFFEE
 func collect_coffee():
-
 	coffee_count += 1
 	calm_level = min(calm_level + 0.2, 1.0)
 

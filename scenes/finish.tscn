@@ -1,9 +1,12 @@
-[gd_scene format=3 uid="uid://7mv5j0kdtwmq"]
+[gd_scene format=3 uid="uid://80dv7rfutiix"]
+
+[ext_resource type="Script" uid="uid://dona87almug13" path="res://scripts/finish.gd" id="1_5nbog"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mrg2o"]
-size = Vector2(220, 40)
+size = Vector2(220, 220)
 
-[node name="Finish" type="Area2D" unique_id=682775939]
+[node name="Finish" type="Area2D" unique_id=1119427143]
+script = ExtResource("1_5nbog")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=489716063]
 shape = SubResource("RectangleShape2D_mrg2o")
@@ -15,9 +18,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -110.0
-offset_top = -20.0
+offset_top = -110.0
 offset_right = 110.0
-offset_bottom = 20.0
+offset_bottom = 110.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 1, 0, 1)

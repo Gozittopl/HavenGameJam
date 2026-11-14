@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cbetuot103xdx"]
+
+[ext_resource type="PackedScene" uid="uid://dvjjwqm04qhol" path="res://scenes/player.tscn" id="1_dwgg1"]
+[ext_resource type="PackedScene" uid="uid://d0featkr5y2ps" path="res://scenes/ground.tscn" id="2_ru4tf"]
+[ext_resource type="PackedScene" uid="uid://c3u5huwtef4d6" path="res://scenes/Coffee.tscn" id="3_6sh32"]
+[ext_resource type="PackedScene" uid="uid://cdu67666ixq0m" path="res://scenes/platform.tscn" id="4_ejswk"]
+[ext_resource type="PackedScene" uid="uid://80dv7rfutiix" path="res://scenes/finish.tscn" id="5_ru4tf"]
+
+[node name="Level1" type="Node2D" unique_id=1460091751]
+
+[node name="Player" parent="." unique_id=517550424 instance=ExtResource("1_dwgg1")]
+position = Vector2(-936, 790)
+
+[node name="Ground" parent="." unique_id=2120301584 instance=ExtResource("2_ru4tf")]
+position = Vector2(-38, 936)
+
+[node name="Coffee" parent="." unique_id=575645644 instance=ExtResource("3_6sh32")]
+position = Vector2(262, 806)
+
+[node name="Platform" parent="." unique_id=886023701 instance=ExtResource("4_ejswk")]
+position = Vector2(-1091, 696)
+
+[node name="Platform2" parent="." unique_id=2094895302 instance=ExtResource("4_ejswk")]
+position = Vector2(-1089, 428)
+
+[node name="Platform3" parent="." unique_id=1086693062 instance=ExtResource("4_ejswk")]
+position = Vector2(-365, 431)
+
+[node name="Platform4" parent="." unique_id=322757985 instance=ExtResource("4_ejswk")]
+position = Vector2(-266, 73)
+
+[node name="Platform5" parent="." unique_id=611966828 instance=ExtResource("4_ejswk")]
+position = Vector2(-145, 431)
+
+[node name="Platform6" parent="." unique_id=375011298 instance=ExtResource("4_ejswk")]
+position = Vector2(115, 69)
+
+[node name="Platform7" parent="." unique_id=1033805101 instance=ExtResource("4_ejswk")]
+position = Vector2(75, 431)
+
+[node name="Platform8" parent="." unique_id=1144697316 instance=ExtResource("4_ejswk")]
+position = Vector2(605, 439)
+
+[node name="Coffee2" parent="." unique_id=981862364 instance=ExtResource("3_6sh32")]
+position = Vector2(607, 374)
+
+[node name="Finish" parent="." unique_id=1119427143 instance=ExtResource("5_ru4tf")]
+position = Vector2(114, -57)
+next_level_path = "uid://bpctmb5uald5n"

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b223jgpr6dkdt"]
+
+[ext_resource type="PackedScene" uid="uid://dvjjwqm04qhol" path="res://scenes/player.tscn" id="1_jaojv"]
+[ext_resource type="PackedScene" uid="uid://d0featkr5y2ps" path="res://scenes/ground.tscn" id="2_3n54i"]
+[ext_resource type="PackedScene" uid="uid://c3u5huwtef4d6" path="res://scenes/Coffee.tscn" id="3_nb5j2"]
+[ext_resource type="PackedScene" uid="uid://cdu67666ixq0m" path="res://scenes/platform.tscn" id="4_r7wj8"]
+[ext_resource type="PackedScene" uid="uid://80dv7rfutiix" path="res://scenes/finish.tscn" id="5_3n54i"]
+
+[node name="Main" type="Node2D" unique_id=1460091751]
+
+[node name="Player" parent="." unique_id=517550424 instance=ExtResource("1_jaojv")]
+position = Vector2(-784, 550)
+
+[node name="Ground" parent="." unique_id=2120301584 instance=ExtResource("2_3n54i")]
+position = Vector2(-38, 936)
+
+[node name="Coffee" parent="." unique_id=575645644 instance=ExtResource("3_nb5j2")]
+position = Vector2(-507, 428)
+
+[node name="Platform" parent="." unique_id=886023701 instance=ExtResource("4_r7wj8")]
+position = Vector2(-508, 741)
+
+[node name="Platform2" parent="." unique_id=2094895302 instance=ExtResource("4_r7wj8")]
+position = Vector2(-501, 563)
+
+[node name="Platform3" parent="." unique_id=1086693062 instance=ExtResource("4_r7wj8")]
+position = Vector2(-495, -84)
+
+[node name="Coffee5" parent="." unique_id=519651647 instance=ExtResource("3_nb5j2")]
+position = Vector2(-488, -166)
+
+[node name="Platform4" parent="." unique_id=322757985 instance=ExtResource("4_r7wj8")]
+position = Vector2(-498, 296)
+
+[node name="Coffee6" parent="." unique_id=19787958 instance=ExtResource("3_nb5j2")]
+position = Vector2(-487, 205)
+
+[node name="Platform5" parent="." unique_id=651777443 instance=ExtResource("4_r7wj8")]
+position = Vector2(-476, -634)
+
+[node name="Coffee7" parent="." unique_id=1507106352 instance=ExtResource("3_nb5j2")]
+position = Vector2(-493, -820)
+
+[node name="Platform6" parent="." unique_id=2056839819 instance=ExtResource("4_r7wj8")]
+position = Vector2(-452, -1332)
+
+[node name="Finish" parent="." unique_id=1119427143 instance=ExtResource("5_3n54i")]

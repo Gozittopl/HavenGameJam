@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cm4sx773oeyrt"]
+[gd_scene format=3 uid="uid://c3u5huwtef4d6"]
 
 [ext_resource type="Script" uid="uid://cf35yijd2we4h" path="res://scripts/coffee_script.gd" id="1_q5q51"]
 
@@ -23,5 +23,4 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-offset_transform_enabled = true
 color = Color(0.44583136, 0.28983602, 0.14151058, 1)
