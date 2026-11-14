@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cm4sx773oeyrt"]
+
+[ext_resource type="Script" uid="uid://cf35yijd2we4h" path="res://scripts/coffee_script.gd" id="1_q5q51"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mrg2o"]
+radius = 50.0
+
+[node name="Coffee" type="Area2D" unique_id=575645644]
+script = ExtResource("1_q5q51")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=998493842]
+shape = SubResource("CircleShape2D_mrg2o")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=431507130]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+color = Color(0.44583136, 0.28983602, 0.14151058, 1)
