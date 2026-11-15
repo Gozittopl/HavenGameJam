@@ -10,9 +10,18 @@ script = ExtResource("1_gmv32")
 [node name="PlayButton" type="Button" parent="." unique_id=366119069]
 layout_mode = 0
 offset_left = 500.0
-offset_top = 287.0
+offset_top = 315.0
 offset_right = 700.0
-offset_bottom = 347.0
+offset_bottom = 375.0
 text = "PLAY"
+
+[node name="Label" type="Label" parent="." unique_id=2090901701]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 173.0
+offset_right = 878.0
+offset_bottom = 310.0
+theme_override_font_sizes/font_size = 100
+text = "Bouncoffee"
 
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
