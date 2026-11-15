@@ -42,7 +42,7 @@ position = Vector2(43, -62)
 
 [node name="Finish" parent="." unique_id=682775939 instance=ExtResource("5_cq4me")]
 position = Vector2(-451, -641)
-next_level_path = "uid://b6eb4y2gmi3m8"
+next_level_path = "uid://cbetuot103xdx"
 
 [node name="Platform6" parent="." unique_id=1811704843 instance=ExtResource("4_gbqnl")]
 position = Vector2(-463, -510)

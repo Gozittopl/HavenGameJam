@@ -47,7 +47,7 @@ position = Vector2(607, 374)
 
 [node name="Finish" parent="." unique_id=1119427143 instance=ExtResource("5_ru4tf")]
 position = Vector2(114, -57)
-next_level_path = "uid://bpctmb5uald5n"
+next_level_path = "uid://b223jgpr6dkdt"
 
 [node name="Wall" parent="." unique_id=98720528 instance=ExtResource("6_6sh32")]
 position = Vector2(-1223, -217)
@@ -56,3 +56,6 @@ scale = Vector2(1, 10)
 [node name="Wall2" parent="." unique_id=1403905310 instance=ExtResource("6_6sh32")]
 position = Vector2(1145, -217)
 scale = Vector2(1, 10)
+
+[node name="Wall3" parent="." unique_id=2019997904 instance=ExtResource("6_6sh32")]
+position = Vector2(242, -54)

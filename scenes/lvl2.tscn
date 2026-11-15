@@ -47,7 +47,7 @@ position = Vector2(-452, -1332)
 
 [node name="Finish" parent="." unique_id=1119427143 instance=ExtResource("5_3n54i")]
 position = Vector2(-449, -1450)
-next_level_path = "uid://cvga1viiy511n"
+next_level_path = "uid://x0e2mhbqb5e"
 
 [node name="Wall" parent="." unique_id=2139381859 instance=ExtResource("6_nb5j2")]
 position = Vector2(-1663, -1316)
