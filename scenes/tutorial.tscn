@@ -57,3 +57,23 @@ scale = Vector2(1, 10)
 
 [node name="Ground2" parent="." unique_id=1439100834 instance=ExtResource("2_cq4me")]
 position = Vector2(-38, -1343)
+
+[node name="Label" type="Label" parent="." unique_id=1372729363]
+offset_left = -1136.0
+offset_top = 444.0
+offset_right = -828.0
+offset_bottom = 657.0
+theme_override_font_sizes/font_size = 50
+text = "W - left
+D - right
+Space - jump"
+
+[node name="Label2" type="Label" parent="." unique_id=1457775119]
+offset_left = -40.0
+offset_top = 529.0
+offset_right = 639.0
+offset_bottom = 742.0
+theme_override_font_sizes/font_size = 50
+text = "Coffee makes u jump higher
+but it makes u bouncier and
+harder to control"
